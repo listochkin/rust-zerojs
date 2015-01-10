@@ -6,11 +6,11 @@ fn main() {
     let out_dir = os::getenv("OUT_DIR").unwrap();
 
     // 1. duktape.o
-    Command::new("gcc").args(&["deps/duktape/src/duktape.c", "-c", "-o"])
+    Command::new("gcc").args(&["deps/duktape/src/duktape.c", "-c", "-fPIC", "-o"])
                        .arg(format!("{}/duktape.o", out_dir))
                        .status().unwrap();
     // 2. dt.o
-    Command::new("gcc").args(&["-I", "deps/duktape/src", "src/dt/dt.c", "-c", "-o"])
+    Command::new("gcc").args(&["-I", "deps/duktape/src", "src/dt/dt.c", "-c", "-fPIC", "-o"])
                        .arg(format!("{}/dt.o", out_dir))
                        .status().unwrap();
     // 3. libdt.a
