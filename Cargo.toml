@@ -4,5 +4,10 @@ name = "zjs"
 version = "0.0.1"
 authors = ["Andrey Listochkin <listochkin@outlook.com>"]
 readme = "README.md"
+description = "Zero JS runs JavaScript code from Rust. Powered by http://duktape.org/"
+keywords = ["JavaScript", "Duktape", "ECMAScript", "ES5", "ES6", "embedded"]
+license-file = "LICENSE"
+license = "mit"
+repository = "https://github.com/listochkin/rust-zerojs"
 
 build = "build.rs"
