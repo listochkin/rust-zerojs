@@ -23,7 +23,3 @@ pub fn dt_hello_world() {
 fn test_binding() {
     dt_hello_world();
 }
-
-#[test]
-fn it_works() {
-}
