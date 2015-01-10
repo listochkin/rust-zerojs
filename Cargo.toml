@@ -1,0 +1,7 @@
+[package]
+
+name = "zjs"
+version = "0.0.1"
+authors = ["Andrey Listochkin <listochkin@outlook.com>"]
+
+readme = "README.md"
